@@ -1,10 +1,12 @@
-import { Text, View } from "react-native";
 import "./global.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 export default function App() {
   return (
-    <View>
-      <Text>test</Text>
-    </View>
+    <QueryClientProvider client={queryClient}>
+      {/* <RootNavigator /> */}
+    </QueryClientProvider>
   );
 }
