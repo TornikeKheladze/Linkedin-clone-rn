@@ -6,7 +6,7 @@ import AuthStack from "./AuthStack";
 const RootNavigator = () => {
   return (
     <NavigationContainer>
-      {true ? <AuthStack /> : <GuestStack />}
+      {false ? <AuthStack /> : <GuestStack />}
     </NavigationContainer>
   );
 };

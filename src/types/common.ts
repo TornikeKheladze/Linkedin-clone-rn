@@ -29,3 +29,10 @@ export interface User {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export interface UserRegisterData {
+  name: string;
+  email: string;
+  password: string;
+  passwordConfirmation: string;
+}
